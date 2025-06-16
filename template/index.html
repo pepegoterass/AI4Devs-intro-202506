@@ -1,11 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reverse String</title>    
-</head>
-<body>
-<script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reverse String</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        background: linear-gradient(
+            to bottom,
+            rgba(20, 20, 60, 0.8),
+            rgba(40, 40, 80, 0.8)
+          ),
+          url("https://media.licdn.com/dms/image/v2/C4D0BAQFi_6Sef-Tmdw/company-logo_200_200/company-logo_200_200/0/1631122875351/lidr_cto_logo?e=2147483647&v=beta&t=lbj_hiWDftDS9CdrVRFfdAhCb5RY3m9iwgN9t2vSwX4");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        background-attachment: fixed;
+        font-family: sans-serif;
+      }
+
+      /* Textos en blanco */
+      h1,
+      label,
+      button,
+      p,
+      span#output {
+        color: #fff;
+      }
+
+      /* Placeholder en gris claro */
+      input::placeholder {
+        color: #eee;
+        opacity: 1;
+      }
+
+      /* Input en blanco de ser necesario */
+      input {
+        padding: 0.5em;
+        font-size: 1em;
+        width: 80%;
+        border: none;
+        border-radius: 4px;
+        color: #000;
+        margin: 0.5em auto;
+        display: block;
+      }
+
+      button {
+        padding: 0.6em 1.2em;
+        font-size: 1em;
+        border: none;
+        border-radius: 4px;
+        background-color: #5a7;
+        color: #fff;
+        cursor: pointer;
+        margin: 0.5em auto;
+        display: block;
+      }
+      button:hover {
+        background-color: #478;
+      }
+
+      h1,
+      label,
+      p {
+        text-align: center;
+        margin: 0.5em auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Reverse a String</h1>
+
+    <label for="inputString">Enter text:</label>
+    <input id="inputString" type="text" placeholder="Type something…" />
+
+    <button id="reverseBtn">Reverse!</button>
+
+    <p>
+      Reversed:
+      <span id="output"></span>
+    </p>
+
+    <script src="script.js"></script>
+  </body>
 </html>
